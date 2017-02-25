@@ -6,9 +6,7 @@ import homepunk.application.lesson.practice.model.ToDoItem;
 import retrofit2.http.GET;
 import rx.Observable;
 
-import static homepunk.application.lesson.practice.data.Constants.END_POINT;
-
 public interface ToDoRestApi {
-    @GET('')
+    @GET("todos")
     Observable<List<ToDoItem>> loadToDoList();
 }
